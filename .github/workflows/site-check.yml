@@ -20,6 +20,7 @@ jobs:
           test -f assets/css/style.css
           test -f assets/js/products.js
           test -f assets/js/app.js
+          test -f campanhas/malbec.html
 
       - name: Conferir referências principais
         run: |
@@ -30,3 +31,5 @@ jobs:
           grep -q "const products" assets/js/products.js
           grep -q "const best" assets/js/products.js
           grep -q "const offers" assets/js/products.js
+          grep -q "Malbec" campanhas/malbec.html
+          grep -q "wa.me/5531995170249" campanhas/malbec.html
