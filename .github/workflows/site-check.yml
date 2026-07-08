@@ -23,6 +23,9 @@ jobs:
           test -f campanhas/malbec.html
           test -f campanhas/lily.html
           test -f campanhas/floratta.html
+          test -f campanhas/nativa-spa.html
+          test -f campanhas/body-splash.html
+          test -f campanhas/kits-presenteaveis.html
 
       - name: Conferir referências principais
         run: |
@@ -36,6 +39,12 @@ jobs:
           grep -q "Malbec" campanhas/malbec.html
           grep -q "Lily" campanhas/lily.html
           grep -q "Floratta" campanhas/floratta.html
+          grep -q "Nativa SPA" campanhas/nativa-spa.html
+          grep -q "Body Splash" campanhas/body-splash.html
+          grep -q "Kits" campanhas/kits-presenteaveis.html
           grep -q "wa.me/5531995170249" campanhas/malbec.html
           grep -q "wa.me/5531995170249" campanhas/lily.html
           grep -q "wa.me/5531995170249" campanhas/floratta.html
+          grep -q "wa.me/5531995170249" campanhas/nativa-spa.html
+          grep -q "wa.me/5531995170249" campanhas/body-splash.html
+          grep -q "wa.me/5531995170249" campanhas/kits-presenteaveis.html
