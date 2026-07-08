@@ -27,6 +27,12 @@ Os posts e stories prontos ficam em:
 docs/POSTS-STORIES-CAMPANHAS.md
 ```
 
+Os designs criados no Canva ficam registrados em:
+
+```text
+docs/CANVA-DESIGNS.md
+```
+
 ## Como usar
 
 Use uma página de campanha quando quiser divulgar um produto específico sem mandar o cliente para o catálogo inteiro.
@@ -38,6 +44,7 @@ Exemplo de uso:
 - status do WhatsApp
 - mensagem para cliente interessado
 - bio temporária do Instagram
+- post visual criado no Canva
 
 ## Estrutura atual
 
@@ -61,12 +68,14 @@ campanhas/
 - [ ] Estoque/disponibilidade foi confirmado?
 - [ ] Texto do Marketplace foi copiado do guia correto?
 - [ ] Post ou story foi escolhido do guia correto?
+- [ ] Design do Canva foi exportado em PNG ou JPG?
 
 ## Próximas melhorias recomendadas
 
 - adicionar fotos reais dos produtos
 - criar QR Code para cada campanha
 - medir quais campanhas geram mais conversas
+- criar novos designs individuais por produto
 
 ## Regra comercial
 
