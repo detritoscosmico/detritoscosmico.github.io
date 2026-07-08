@@ -28,6 +28,7 @@ jobs:
           test -f campanhas/kits-presenteaveis.html
           test -f docs/TEXTOS-MARKETPLACE.md
           test -f docs/POSTS-STORIES-CAMPANHAS.md
+          test -f docs/CANVA-DESIGNS.md
 
       - name: Conferir referências principais
         run: |
@@ -54,3 +55,5 @@ jobs:
           grep -q "Mensagem padrão de fechamento" docs/TEXTOS-MARKETPLACE.md
           grep -q "Posts e stories" docs/POSTS-STORIES-CAMPANHAS.md
           grep -q "Chamada para ação padrão" docs/POSTS-STORIES-CAMPANHAS.md
+          grep -q "Elegance Cosméticos: WhatsApp VIP Campaign" docs/CANVA-DESIGNS.md
+          grep -q "canva.com" docs/CANVA-DESIGNS.md
