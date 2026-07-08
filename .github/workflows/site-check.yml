@@ -27,6 +27,7 @@ jobs:
           test -f campanhas/body-splash.html
           test -f campanhas/kits-presenteaveis.html
           test -f docs/TEXTOS-MARKETPLACE.md
+          test -f docs/POSTS-STORIES-CAMPANHAS.md
 
       - name: Conferir referências principais
         run: |
@@ -51,3 +52,5 @@ jobs:
           grep -q "wa.me/5531995170249" campanhas/kits-presenteaveis.html
           grep -q "Textos prontos" docs/TEXTOS-MARKETPLACE.md
           grep -q "Mensagem padrão de fechamento" docs/TEXTOS-MARKETPLACE.md
+          grep -q "Posts e stories" docs/POSTS-STORIES-CAMPANHAS.md
+          grep -q "Chamada para ação padrão" docs/POSTS-STORIES-CAMPANHAS.md
