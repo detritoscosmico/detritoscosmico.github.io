@@ -13,6 +13,14 @@ campanhas/body-splash.html
 campanhas/kits-presenteaveis.html
 ```
 
+## Textos prontos
+
+Os textos para anúncio, grupos, respostas rápidas, fechamento e pós-venda ficam em:
+
+```text
+docs/TEXTOS-MARKETPLACE.md
+```
+
 ## Como usar
 
 Use uma página de campanha quando quiser divulgar um produto específico sem mandar o cliente para o catálogo inteiro.
@@ -45,12 +53,12 @@ campanhas/
 - [ ] Não há promessa exagerada?
 - [ ] Página abre no celular?
 - [ ] Estoque/disponibilidade foi confirmado?
+- [ ] Texto do Marketplace foi copiado do guia correto?
 
 ## Próximas melhorias recomendadas
 
 - adicionar fotos reais dos produtos
 - criar QR Code para cada campanha
-- criar textos prontos para Marketplace
 - criar posts e stories para cada campanha
 - medir quais campanhas geram mais conversas
 
