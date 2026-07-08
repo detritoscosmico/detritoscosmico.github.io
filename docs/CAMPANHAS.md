@@ -8,6 +8,9 @@ Esta pasta organiza páginas específicas para divulgar produtos em grupos, Mark
 campanhas/malbec.html
 campanhas/lily.html
 campanhas/floratta.html
+campanhas/nativa-spa.html
+campanhas/body-splash.html
+campanhas/kits-presenteaveis.html
 ```
 
 ## Como usar
@@ -22,7 +25,7 @@ Exemplo de uso:
 - mensagem para cliente interessado
 - bio temporária do Instagram
 
-## Estrutura recomendada para novas campanhas
+## Estrutura atual
 
 ```text
 campanhas/
@@ -43,11 +46,13 @@ campanhas/
 - [ ] Página abre no celular?
 - [ ] Estoque/disponibilidade foi confirmado?
 
-## Próximas campanhas recomendadas
+## Próximas melhorias recomendadas
 
-- Nativa SPA
-- Body Splash
-- Kits presenteáveis
+- adicionar fotos reais dos produtos
+- criar QR Code para cada campanha
+- criar textos prontos para Marketplace
+- criar posts e stories para cada campanha
+- medir quais campanhas geram mais conversas
 
 ## Regra comercial
 
