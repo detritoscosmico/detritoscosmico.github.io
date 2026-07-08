@@ -36,12 +36,22 @@ function add(id) {
   openSuzy(`Adicionei ${product.name} ao carrinho`);
 }
 
+function productVisual(product) {
+  if (product.image) {
+    return `<img src="${product.image}" alt="${product.name}" loading="lazy" />`;
+  }
+
+  return `<span>${product.name}</span>`;
+}
+
 function card(product, badge = '') {
+  if (!product) return '';
+
   const tierLabel = product.tier === 'premium' ? 'Premium' : product.tier === 'intermediario' ? 'Intermediário' : 'Econômico';
 
   return `
     <article class="product">
-      <div class="product-image">${product.name}</div>
+      <div class="product-image">${productVisual(product)}</div>
       <span class="tag">${badge || product.cat} • ${tierLabel}</span>
       <h3>${product.name}</h3>
       <p>${product.desc}</p>
