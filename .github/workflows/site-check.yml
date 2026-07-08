@@ -18,10 +18,15 @@ jobs:
         run: |
           test -f index.html
           test -f assets/css/style.css
+          test -f assets/js/products.js
           test -f assets/js/app.js
 
       - name: Conferir referências principais
         run: |
           grep -q "assets/css/style.css" index.html
+          grep -q "assets/js/products.js" index.html
           grep -q "assets/js/app.js" index.html
           grep -q "Elegance Cosméticos" index.html
+          grep -q "const products" assets/js/products.js
+          grep -q "const best" assets/js/products.js
+          grep -q "const offers" assets/js/products.js
