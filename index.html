@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Elegance Cosméticos: perfumes, maquiagem, kits, cabelos e atendimento premium com Suzy." />
+  <title>Elegance Cosméticos | Loja Premium</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="top-note">Elegance Cosméticos • Atendimento premium • Compra direta pelo WhatsApp</div>
+  <header class="header">
+    <a class="brand" href="#home">Elegance <span>Cosméticos</span></a>
+    <button class="menu" id="menuBtn">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Início</a>
+      <div class="drop"><button>Categorias ▾</button><div class="drop-menu"><a href="#feminino">Feminino</a><a href="#masculino">Masculino</a><a href="#kits">Kits</a><a href="#cabelos">Cabelos</a><a href="#maquiagem">Maquiagem</a></div></div>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#suzy">Suzy</a>
+      <a href="#carrinho">Carrinho <b id="cartCount">0</b></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Curadoria premium de beleza</p>
+        <h1>Luxo acessível, atendimento humano e produtos que deixam presença.</h1>
+        <p>Perfumes, maquiagem, cabelos, kits e autocuidado com suporte da Suzy para ajudar o cliente a escolher certo.</p>
+        <div class="actions"><a class="btn primary" href="#catalogo">Explorar catálogo</a><button class="btn secondary" onclick="openSuzy('Quero um diagnóstico de beleza')">Fazer Diagnóstico Glow</button></div>
+        <div class="proof"><span>✨ Perfumes femininos e masculinos</span><span>🎁 Kits para presente</span><span>💬 Compra pelo WhatsApp</span></div>
+      </div>
+      <aside class="hero-card"><span>Destaque premium</span><h2>Eudora Rosé</h2><p>Fragrância luxuosa com acorde inspirado no espumante rosé.</p><strong>R$ 199,91</strong><button onclick="buy('eudora-rose')">Comprar pelo WhatsApp</button></aside>
+    </section>
+
+    <section class="benefits"><article><b>🚚 Atendimento ágil</b><span>Pedido direto no WhatsApp</span></article><article><b>💎 Curadoria selecionada</b><span>Produtos escolhidos para vender bem</span></article><article><b>🤍 Suzy Beauty</b><span>Recomenda por intenção e orçamento</span></article><article><b>🎀 Visual premium</b><span>Experiência de boutique</span></article></section>
+
+    <section class="banners">
+      <a href="#feminino" class="banner perfume"><small>Elegance Cosméticos</small><h2>Perfumes que deixam presença</h2><p>Eudora Rosé, Malbec, Coffee e escolhas marcantes.</p><span>Comprar agora</span></a>
+      <a href="#kits" class="banner gifts"><small>Elegance Cosméticos</small><h2>Presentes que impressionam</h2><p>Kits prontos para surpreender com sofisticação.</p><span>Ver kits</span></a>
+      <a href="#suzy" class="banner suzy-banner"><small>Elegance Cosméticos</small><h2>10% OFF na primeira compra</h2><p>Fale com a Suzy e descubra sua melhor opção.</p><span>Fazer diagnóstico</span></a>
+    </section>
+
+    <section class="section" id="catalogo"><p class="eyebrow">Catálogo</p><h2>Produtos da Elegance</h2><div class="grid" id="productGrid"></div></section>
+
+    <section class="section categories"><p class="eyebrow">Categorias</p><h2>Vitrine organizada</h2><div id="categoryBlocks"></div></section>
+
+    <section class="section sales" id="ofertas"><p class="eyebrow">Ranking da Elegance</p><h2>Mais vendidos e ofertas da semana</h2><div class="grid" id="salesGrid"></div></section>
+
+    <section class="suzy-section" id="suzy"><div><p class="eyebrow">Suzy Beauty V2</p><h2>Uma assistente charmosa que vende junto com você.</h2><p>Digite o que procura. A Suzy separa 3 opções: premium, intermediária e econômica.</p><div class="search"><input id="suzyQuery" placeholder="Ex.: perfume feminino, presente, cabelo, maquiagem barata" /><button onclick="handleSuzy()">Perguntar</button></div><div id="suzyAnswer" class="answer"></div></div><div class="suzy-card"><div class="avatar">S</div><h3>Suzy</h3><p>Consultora virtual da Elegance</p><button onclick="openSuzy('Quero um presente elegante')">Começar atendimento</button></div></section>
+
+    <section class="section cart" id="carrinho"><p class="eyebrow">Pedido</p><h2>Carrinho</h2><div id="cartItems"></div><h3>Total: <span id="cartTotal">R$ 0,00</span></h3><button class="btn primary" onclick="finishOrder()">Finalizar pelo WhatsApp</button></section>
+  </main>
+
+  <button class="fab" onclick="openSuzy('Oi Suzy, quero ajuda')">Suzy</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
