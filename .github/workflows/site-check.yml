@@ -1,0 +1,27 @@
+name: Verificação do site
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos principais
+        run: |
+          test -f index.html
+          test -f assets/css/style.css
+          test -f assets/js/app.js
+
+      - name: Conferir referências principais
+        run: |
+          grep -q "assets/css/style.css" index.html
+          grep -q "assets/js/app.js" index.html
+          grep -q "Elegance Cosméticos" index.html
