@@ -21,6 +21,12 @@ Os textos para anúncio, grupos, respostas rápidas, fechamento e pós-venda fic
 docs/TEXTOS-MARKETPLACE.md
 ```
 
+Os posts e stories prontos ficam em:
+
+```text
+docs/POSTS-STORIES-CAMPANHAS.md
+```
+
 ## Como usar
 
 Use uma página de campanha quando quiser divulgar um produto específico sem mandar o cliente para o catálogo inteiro.
@@ -54,12 +60,12 @@ campanhas/
 - [ ] Página abre no celular?
 - [ ] Estoque/disponibilidade foi confirmado?
 - [ ] Texto do Marketplace foi copiado do guia correto?
+- [ ] Post ou story foi escolhido do guia correto?
 
 ## Próximas melhorias recomendadas
 
 - adicionar fotos reais dos produtos
 - criar QR Code para cada campanha
-- criar posts e stories para cada campanha
 - medir quais campanhas geram mais conversas
 
 ## Regra comercial
