@@ -1,6 +1,6 @@
 # Elegance Cosméticos
 
-Site comercial inicial da **Elegance Cosméticos**.
+Site comercial da **Elegance Cosméticos**.
 
 ## Posicionamento
 
@@ -14,23 +14,39 @@ Identidade futurista, vibrante e premium.
 - WhatsApp comercial: **+55 31 99517-0249**
 - Site: **https://detritoscosmico.github.io/elegance-cosmeticos/**
 
-## ELEG-BOT-001 — status
+## Status do projeto
 
-**IMPLEMENTADO NO SITE**
+### ELEG-BOT-001 — Captação e qualificação
 
-O assistente atual:
+**IMPLEMENTADO**
 
 - identifica origem do lead;
-- recebe leads de links rastreáveis;
-- qualifica intenção;
-- qualifica categoria;
-- coleta o primeiro nome;
-- monta mensagem estruturada;
+- recebe links rastreáveis;
+- qualifica intenção e categoria;
+- prepara mensagem;
 - transfere para o WhatsApp;
-- organiza solicitações de pós-venda;
-- permite retomada local do atendimento.
+- inclui fluxo de pós-venda;
+- mantém retomada local no navegador.
 
-### Links de campanha
+### ELEG-BOT-002 — Catálogo e base comercial
+
+**IMPLEMENTADO**
+
+A vitrine pública usa somente produtos que passaram pelo cruzamento de:
+
+- identificação;
+- preço cadastrado;
+- estoque positivo na fonte operacional mais recente;
+- material visual correspondente.
+
+Produtos atualmente exibidos:
+
+- **90219 — Cuide-se Bem Deleite Caramelizado Body Splash 200ml**
+- **75792 — Floratta Red Desodorante Colônia 75ml**
+
+A disponibilidade é reconfirmada no WhatsApp antes do fechamento.
+
+## Links de campanha
 
 Instagram:
 
@@ -40,43 +56,55 @@ Facebook:
 
 https://detritoscosmico.github.io/elegance-cosmeticos/?origem=facebook
 
+Acesso direto:
+
+https://detritoscosmico.github.io/elegance-cosmeticos/
+
 ## Estrutura
 
 ```txt
 /elegance-cosmeticos
 ├── index.html
+├── assets/
+│   └── produtos/
+│       ├── 90219-deleite-caramelizado-200ml.jpg
+│       └── 75792-floratta-red-75ml.jpg
 ├── css/
 │   └── style.css
+├── data/
+│   └── produtos-liberados.json
 ├── js/
-│   └── script.js
+│   ├── script.js
+│   └── catalogo.js
 ├── docs/
-│   └── ELEG-BOT-001_FLUXO_COMERCIAL.md
+│   ├── ELEG-BOT-001_FLUXO_COMERCIAL.md
+│   └── ELEG-BOT-002_CATALOGO_BASE_COMERCIAL.md
 └── README.md
 ```
 
 ## Regras comerciais
 
-O site não deve apresentar como disponível qualquer produto sem confirmação de:
+Não exibir como oferta liberada qualquer produto sem evidência suficiente de:
 
 1. identificação;
-2. estoque;
-3. preço;
-4. material visual suficiente.
+2. preço;
+3. estoque;
+4. material visual.
 
-Não inventar promoções, descontos, estoque ou benefícios.
+Não inventar promoções, descontos, estoque, vendas ou benefícios.
 
-## O que ainda não está integrado
+## Limitações atuais
 
-- WhatsApp Business Platform / Cloud API;
-- Instagram Messaging API;
-- Facebook Messenger API;
-- CRM externo;
-- catálogo oficial sincronizado;
-- pagamentos;
-- automações de recuperação fora do navegador.
+- o estoque do site não é em tempo real;
+- o site não grava leads em CRM central;
+- não há WhatsApp Business Platform / Cloud API;
+- não há Instagram Messaging API;
+- não há Facebook Messenger API;
+- não há checkout ou pagamento integrado;
+- produtos do pedido 531077126 permanecem bloqueados enquanto o recebimento físico não estiver confirmado na base.
 
 ## Próxima tarefa
 
-**ELEG-BOT-002 — CATÁLOGO E BASE COMERCIAL**
+**ELEG-BOT-003 — CRM E RASTREAMENTO DE LEADS**
 
-Cruzar os dados oficiais da Elegance e liberar para exibição somente produtos comercialmente confirmados.
+Registrar origem, produto de interesse, etapa e conversão de forma centralizada e auditável, preservando privacidade e sem armazenar credenciais no repositório.
