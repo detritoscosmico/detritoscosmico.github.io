@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elegance Cosméticos | Sua Beleza. Seu Poder.</title>
-  <meta name="description" content="Elegance Cosméticos: catálogo, promoções, skincare, maquiagem, perfumes e cuidados pessoais com atendimento pelo WhatsApp." />
+  <meta name="description" content="Elegance Cosméticos: beleza, perfumaria, maquiagem, skincare e cuidados pessoais com atendimento pelo WhatsApp." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -14,9 +14,9 @@
       <span class="brand-text">Elegance <strong>Cosméticos</strong></span>
     </a>
     <nav class="nav">
-      <a href="#produtos">Produtos</a>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#bot">Bot</a>
+      <a href="#produtos">Categorias</a>
+      <a href="#assistente">Assistente</a>
+      <a href="#fluxo">Como funciona</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -26,112 +26,124 @@
       <div class="hero-content">
         <p class="eyebrow">Beleza • Tecnologia • Sofisticação</p>
         <h1>Sua Beleza.<br />Seu Poder.</h1>
-        <p class="subtitle">Cosméticos selecionados para mulheres que querem se cuidar, se destacar e comprar com atendimento rápido pelo WhatsApp.</p>
+        <p class="subtitle">Atendimento digital para descobrir categorias, qualificar sua necessidade e seguir para o WhatsApp da Elegance Cosméticos.</p>
         <div class="hero-actions">
-          <a class="btn primary" id="btn-whatsapp-hero" href="https://wa.me/5531995170249?text=Ol%C3%A1%2C%20quero%20receber%20o%20cat%C3%A1logo%20da%20Elegance%20Cosm%C3%A9ticos" target="_blank" rel="noopener">Comprar no WhatsApp</a>
-          <a class="btn secondary" href="#catalogo">Ver Catálogo</a>
+          <a class="btn primary" href="#assistente">Iniciar atendimento</a>
+          <a class="btn secondary" href="https://wa.me/5531995170249?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Elegance%20Cosm%C3%A9ticos" target="_blank" rel="noopener">WhatsApp</a>
         </div>
+        <p class="microcopy">Nenhum produto, preço, promoção ou estoque é apresentado sem confirmação.</p>
       </div>
-      <div class="hero-card" aria-label="Logo Elegance Cosméticos">
-        <div class="logo-orb">
-          <span>E</span>
-        </div>
+
+      <div class="hero-card" aria-label="Elegance Cosméticos">
+        <div class="logo-orb"><span>E</span></div>
         <h2>Elegance</h2>
         <p>Cosméticos</p>
         <small>Sua Beleza. Seu Poder.</small>
       </div>
     </section>
 
-    <section class="metrics" aria-label="Diferenciais">
-      <div><strong>Atendimento</strong><span>rápido pelo WhatsApp</span></div>
-      <div><strong>Catálogo</strong><span>digital e organizado</span></div>
-      <div><strong>Produtos</strong><span>beleza e cuidados pessoais</span></div>
+    <section class="metrics" aria-label="Objetivos da operação">
+      <div><strong>Captar</strong><span>leads de Instagram, Facebook e site</span></div>
+      <div><strong>Qualificar</strong><span>interesse antes do atendimento humano</span></div>
+      <div><strong>Converter</strong><span>para conversa comercial no WhatsApp</span></div>
     </section>
 
     <section id="produtos" class="section">
       <div class="section-head">
-        <p class="eyebrow">Vitrine inicial</p>
-        <h2>Categorias de produtos</h2>
-        <p>Estrutura pronta para vender revenda, afiliados e futuramente produtos próprios da Elegance.</p>
+        <p class="eyebrow">Categorias</p>
+        <h2>O que você procura?</h2>
+        <p>As categorias abaixo servem para direcionar o atendimento. A disponibilidade real será confirmada antes de qualquer oferta.</p>
       </div>
+
       <div class="grid cards">
         <article class="card">
           <span>✨</span>
           <h3>Skincare</h3>
-          <p>Limpeza facial, hidratantes, séruns e cuidados diários.</p>
-          <a href="https://wa.me/5531995170249?text=Quero%20produtos%20de%20skincare%20da%20Elegance" target="_blank" rel="noopener">Consultar</a>
+          <p>Cuidados faciais e rotina de beleza.</p>
+          <button class="text-button js-start-category" data-category="Skincare">Quero atendimento</button>
         </article>
         <article class="card">
           <span>💄</span>
           <h3>Maquiagem</h3>
-          <p>Bases, batons, máscaras, paletas e itens para uso diário.</p>
-          <a href="https://wa.me/5531995170249?text=Quero%20produtos%20de%20maquiagem%20da%20Elegance" target="_blank" rel="noopener">Consultar</a>
+          <p>Itens para rotina, acabamento e produção.</p>
+          <button class="text-button js-start-category" data-category="Maquiagem">Quero atendimento</button>
         </article>
         <article class="card">
           <span>🌸</span>
           <h3>Perfumaria</h3>
-          <p>Perfumes femininos, body splash e fragrâncias marcantes.</p>
-          <a href="https://wa.me/5531995170249?text=Quero%20ver%20perfumes%20da%20Elegance" target="_blank" rel="noopener">Consultar</a>
+          <p>Perfumes, colônias e fragrâncias.</p>
+          <button class="text-button js-start-category" data-category="Perfumaria">Quero atendimento</button>
         </article>
         <article class="card">
           <span>💎</span>
           <h3>Cabelos</h3>
-          <p>Shampoos, condicionadores, máscaras e finalizadores.</p>
-          <a href="https://wa.me/5531995170249?text=Quero%20produtos%20para%20cabelos%20da%20Elegance" target="_blank" rel="noopener">Consultar</a>
+          <p>Cuidados e tratamento capilar.</p>
+          <button class="text-button js-start-category" data-category="Cabelos">Quero atendimento</button>
         </article>
       </div>
     </section>
 
-    <section id="catalogo" class="section split">
-      <div>
-        <p class="eyebrow">Catálogo digital</p>
-        <h2>Receba as ofertas direto no WhatsApp</h2>
-        <p>O catálogo será usado para apresentar produtos, tirar dúvidas, capturar leads e direcionar a cliente para o fechamento.</p>
-        <ul class="checklist">
-          <li>Promoções do dia</li>
-          <li>Produtos por categoria</li>
-          <li>Atendimento consultivo</li>
-          <li>Fechamento por PIX ou link de pagamento</li>
-        </ul>
-        <a class="btn primary" href="https://wa.me/5531995170249?text=Ol%C3%A1%2C%20quero%20receber%20o%20cat%C3%A1logo%20da%20Elegance%20Cosm%C3%A9ticos" target="_blank" rel="noopener">Receber Catálogo</a>
+    <section id="assistente" class="section assistant-section">
+      <div class="section-head">
+        <p class="eyebrow">ELEG-BOT-001</p>
+        <h2>Assistente de vendas Elegance</h2>
+        <p>Informe sua necessidade e o sistema prepara o atendimento para o WhatsApp. Seus dados ficam neste navegador até você decidir enviar a mensagem.</p>
       </div>
-      <div class="catalog-card">
-        <h3>Menu do Bot</h3>
-        <p>🌸 Bem-vinda à Elegance Cosméticos.</p>
-        <ol>
-          <li>Catálogo</li>
-          <li>Promoções</li>
-          <li>Skincare</li>
-          <li>Maquiagem</li>
-          <li>Perfumes</li>
-          <li>Cabelos</li>
-          <li>Atendimento</li>
-        </ol>
+
+      <div class="bot-shell">
+        <div class="bot-top">
+          <div>
+            <strong>Elegance Assistente</strong>
+            <span id="lead-source-label">Origem: site</span>
+          </div>
+          <button id="bot-reset" class="bot-reset" type="button">Recomeçar</button>
+        </div>
+
+        <div id="bot-messages" class="bot-messages" aria-live="polite"></div>
+        <div id="bot-actions" class="bot-actions"></div>
+
+        <form id="bot-name-form" class="bot-form" hidden>
+          <label for="lead-name">Como podemos chamar você?</label>
+          <div class="bot-form-row">
+            <input id="lead-name" name="lead-name" autocomplete="name" maxlength="60" placeholder="Seu nome" required />
+            <button class="btn primary compact" type="submit">Continuar</button>
+          </div>
+        </form>
+
+        <div id="bot-result" class="bot-result" hidden>
+          <h3>Atendimento preparado</h3>
+          <p id="bot-summary"></p>
+          <a id="bot-whatsapp" class="btn primary" href="#" target="_blank" rel="noopener">Continuar no WhatsApp</a>
+          <button id="bot-copy" class="btn secondary" type="button">Copiar resumo</button>
+        </div>
       </div>
     </section>
 
-    <section id="bot" class="section">
+    <section id="fluxo" class="section">
       <div class="section-head">
-        <p class="eyebrow">Automação comercial</p>
-        <h2>Bot para captar leads e vender</h2>
-        <p>Fluxo pensado para Instagram, Facebook e WhatsApp Business.</p>
+        <p class="eyebrow">Fluxo comercial</p>
+        <h2>Do anúncio ao pós-venda</h2>
+        <p>O site qualifica a intenção e transfere a conversa para o canal comercial confirmado.</p>
       </div>
+
       <div class="timeline">
-        <div><strong>1</strong><span>Cliente vem do Instagram ou Facebook</span></div>
-        <div><strong>2</strong><span>Bot envia menu e catálogo</span></div>
-        <div><strong>3</strong><span>Cliente escolhe categoria</span></div>
-        <div><strong>4</strong><span>Atendimento fecha o pedido</span></div>
-        <div><strong>5</strong><span>Pós-venda pede avaliação e indicação</span></div>
+        <div><strong>1</strong><span>Instagram, Facebook ou acesso direto</span></div>
+        <div><strong>2</strong><span>Identificação da necessidade</span></div>
+        <div><strong>3</strong><span>Categoria e intenção de compra</span></div>
+        <div><strong>4</strong><span>Mensagem estruturada para WhatsApp</span></div>
+        <div><strong>5</strong><span>Venda, acompanhamento e pós-venda</span></div>
       </div>
     </section>
 
     <section id="contato" class="section contact">
-      <p class="eyebrow">Comece agora</p>
-      <h2>Fale com a Elegance Cosméticos</h2>
-      <p>Receba catálogo, promoções e indicação de produtos para sua rotina de beleza.</p>
+      <p class="eyebrow">Atendimento humano</p>
+      <h2>Prefere falar direto?</h2>
+      <p>Abra o WhatsApp comercial da Elegance Cosméticos e continue com um atendente.</p>
       <a class="btn primary" href="https://wa.me/5531995170249?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Elegance%20Cosm%C3%A9ticos" target="_blank" rel="noopener">Chamar no WhatsApp</a>
     </section>
   </main>
+
+  <button id="floating-bot" class="floating-bot" type="button" aria-label="Abrir assistente Elegance">Atendimento</button>
 
   <footer class="footer">
     <p>© <span id="year"></span> Elegance Cosméticos. Sua Beleza. Seu Poder.</p>
