@@ -2,156 +2,112 @@
 
 ## Status
 
-**IMPLEMENTADO NO SITE — V1.0**
+**BLOQUEADO — AGUARDANDO CONFIRMAÇÃO DE PREÇOS**
 
-Data da execução: 01/10/2026.
+Data da revisão: 01/10/2026.
 
 ## Objetivo
 
-Cruzar as fontes operacionais da Elegance Cosméticos e permitir exibição pública somente de produtos que tenham, simultaneamente:
+Cruzar as fontes oficiais disponíveis da Elegance Cosméticos e permitir exibição pública somente de produtos que tenham, simultaneamente:
 
-1. identificação coerente;
-2. preço cadastrado e corroborado;
-3. registro de estoque positivo na fonte operacional mais recente;
-4. material visual correspondente ao produto.
+1. identificação confirmada;
+2. estoque confirmado;
+3. preço confirmado;
+4. material visual suficiente.
 
-A vitrine não transforma o estoque em tempo real. A disponibilidade é reconfirmada no fechamento pelo WhatsApp.
+## Fontes cruzadas
 
-## Fontes usadas
+### ELEG_CAT_001_Catalogo_Mestre_Elegance_Cosmeticos_v1.0.xlsx
 
-### Fonte operacional principal
+Resumo encontrado na fonte:
 
-**Elegance_Cosmeticos_PRO_3.0.xlsm**
+- 7 produtos confirmados;
+- 7 com estoque confirmado;
+- 0 com preço confirmado;
+- 0 prontos para venda;
+- 6 com imagem disponível;
+- orientação explícita: nenhum produto está liberado para venda até a confirmação dos preços atuais.
 
-- última modificação consultada: 26/09/2026;
-- usada para código, produto, preço cadastrado e estoque atual;
-- pedido 531077126 ainda aparece como **Em transporte**.
+A própria aba de referências registra que a tabela de preços histórica não foi importada porque é anterior e contém divergências de custos em parte dos produtos.
 
-### Fonte de catálogo
+### Elegance_Cosmeticos_PRO_3.0.xlsx
 
-**ELEG_CAT_001_Catalogo_Mestre_Elegance_Cosmeticos_v1.0.xlsx**
+Na aba Produtos:
 
-- usada para corroborar identificação, preço e existência de material visual;
-- data-base interna do catálogo: 15/09/2026;
-- por ser anterior à PRO 3.0, não foi usada como fonte final do estoque.
+- os 7 produtos cadastrados aparecem com estoque atual registrado;
+- os campos de preço de venda estão vazios para os produtos comerciais;
+- a Amostra Velvet Soul aparece com preço 0 e não constitui produto comercial liberado.
 
-### Materiais visuais
+### Tabela_Preco_Parcelamento_Elegance_Cosmeticos.xlsx
 
-Os arquivos foram localizados no Google Drive e inspecionados visualmente antes de entrar no site.
+A planilha contém preços históricos e simulações.
 
-## Produtos liberados para conteúdo
+Ela não foi usada como fonte de preço vigente porque o Catálogo Mestre determina explicitamente que esses preços não foram importados e que os preços atuais precisam ser confirmados antes de anunciar.
 
-### SKU 90219
+## Resultado do cruzamento
 
-**Cuide-se Bem Deleite Caramelizado Body Splash 200ml — O Boticário**
+### Produtos liberados para conteúdo/oferta pública
 
-- preço cadastrado na PRO 3.0: **R$ 94,90**;
-- estoque atual registrado na PRO 3.0: **1**;
-- catálogo mestre também registra preço de R$ 94,90 e material visual;
-- foto física inspecionada mostra o frasco Cuide-se Bem Deleite Caramelizado de 200 ml;
-- status aplicado: **LIBERADO PARA CONTEÚDO**;
-- fechamento: confirmar disponibilidade atual antes de concluir a venda.
+**0**
 
-Arquivo publicado no repositório:
+### Produtos bloqueados por preço não confirmado
 
-`assets/produtos/90219-deleite-caramelizado-200ml.jpg`
+- 84387 — Malbec Desodorante Colônia V6 100ml;
+- 75792 — Floratta Red Desodorante Colônia 75ml;
+- 48281 — Nativa SPA Loção Hidratante Corporal Ameixa Negra 400ml;
+- 48060 — Lily Creme Desodorante Hidratante Acetinado Corpo 250g;
+- 90219 — Cuide-se Bem Body Splash Deleite Caramelizado 200ml;
+- 59516 — Refil Nativa SPA Loção Hidratante Corporal Ameixa Negra 350ml.
 
-### SKU 75792
+### Produto não confirmado comercialmente
 
-**Floratta Red Desodorante Colônia 75ml — O Boticário**
+- 89772 — Amostra Velvet Soul 3ml.
 
-- preço cadastrado na PRO 3.0: **R$ 174,90**;
-- estoque atual registrado na PRO 3.0: **1**;
-- catálogo mestre também registra preço de R$ 174,90 e material visual;
-- imagem inspecionada mostra Floratta Red, embalagem de 75 ml;
-- existe venda histórica por R$ 147,90; esse valor histórico não foi reaproveitado como preço atual;
-- status aplicado: **LIBERADO PARA CONTEÚDO**;
-- fechamento: confirmar disponibilidade e condições atuais antes de concluir a venda.
+A amostra também não possui material visual localizado na referência do Catálogo Mestre e depende de definição sobre seu uso comercial.
 
-Arquivo publicado no repositório:
+## Divergência corrigida no GitHub
 
-`assets/produtos/75792-floratta-red-75ml.jpg`
+A versão anterior do site continha dois produtos marcados como **LIBERADO PARA CONTEÚDO** com preços publicados.
 
-## Produtos não liberados nesta etapa
+Essa classificação não é sustentada pelas fontes atuais localizadas no projeto.
 
-### Estoque registrado, mas sem material visual SKU-específico validado para publicação
+Correções executadas:
 
-- 56789 — Eudora Hair-Plastia Combo Shampoo + Condicionador;
-- 48282 — Nativa SPA Ameixa Loção Hidratante 400ml;
-- 59436 — Egeo Choc High Desodorante Colônia 90ml;
-- 19734 — Thaty Desodorante Colônia 100ml;
-- 84113 — Kit Presente Floratta Blue.
+- base pública de produtos liberados zerada;
+- vitrine pública bloqueada;
+- preços removidos da oferta;
+- site alterado para informar que o catálogo está em validação;
+- regra defensiva adicionada ao carregador do catálogo.
 
-Uma foto genérica associada à busca de Hair-Plastia foi localizada, mas não foi tratada como material SKU-específico aprovado sem validação adicional.
+## Estado do site após a correção
 
-### Material visual conhecido, mas estoque atual registrado como zero
+O site continua capaz de:
 
-- 59516 — Refil Nativa SPA Ameixa Negra 350ml;
-- 48281 — Nativa SPA Ameixa Negra Loção Hidratante 400ml;
-- 48060 — Lily Creme Acetinado Hidratante Corporal 250g;
-- 84387 — Malbec Desodorante Colônia 100ml.
+- captar leads;
+- identificar origem;
+- qualificar categoria e intenção;
+- transferir o atendimento para o WhatsApp;
+- receber solicitações de pós-venda.
 
-### Pedido 531077126
+O site **não apresenta produto específico como oferta** enquanto não existir preço vigente confirmado.
 
-Os itens 1630 e 73607 aparecem no pedido 531077126, porém a própria PRO 3.0 ainda registra o pedido como **Em transporte**.
+## Critério para liberar um produto
 
-Consequência:
+Um produto só poderá entrar em `data/produtos-liberados.json` quando houver evidência suficiente dos quatro critérios:
 
-- não foram liberados como estoque disponível;
-- não foram colocados na vitrine;
-- o estoque só deve ser movimentado após confirmação física do recebimento.
+`IDENTIFICAÇÃO + ESTOQUE + PREÇO + MATERIAL VISUAL`
 
-## Implementação no GitHub
+## Próxima ação necessária
 
-Criados/adicionados:
+Executar **ELEG-PRECO-002 — CONFIRMAÇÃO DE PREÇOS PARA LIBERAÇÃO SOCIAL**.
 
-```text
-elegance-cosmeticos/
-├── assets/
-│   └── produtos/
-│       ├── 90219-deleite-caramelizado-200ml.jpg
-│       └── 75792-floratta-red-75ml.jpg
-├── data/
-│   └── produtos-liberados.json
-├── js/
-│   └── catalogo.js
-└── docs/
-    └── ELEG-BOT-002_CATALOGO_BASE_COMERCIAL.md
-```
+Prioridade:
 
-A página principal carrega a base JSON e apresenta apenas os produtos liberados.
+- 84387 — Malbec;
+- 75792 — Floratta Red;
+- 48281 — Nativa SPA Ameixa Negra 400ml;
+- 48060 — Lily Creme Acetinado 250g;
+- 90219 — Body Splash Deleite Caramelizado;
+- 59516 — Refil Nativa SPA Ameixa Negra 350ml.
 
-## Regras aplicadas no site
-
-- nenhuma promoção foi inventada;
-- nenhum desconto foi aplicado;
-- quantidades não são usadas como argumento de urgência;
-- o preço aparece como preço cadastrado na base;
-- a data-base é mostrada;
-- o botão comercial solicita confirmação de disponibilidade;
-- produtos bloqueados não aparecem na vitrine.
-
-## Situação da etapa
-
-### Concluído
-
-- cruzamento da PRO 3.0 com Catálogo Mestre;
-- validação visual dos dois produtos aptos;
-- publicação das imagens no GitHub;
-- criação da base comercial em JSON;
-- criação da vitrine;
-- CTA com mensagem de WhatsApp contendo produto, SKU e preço de referência.
-
-### Continua pendente
-
-- reconciliação física do estoque do pedido 531077126;
-- materiais visuais dos demais produtos com estoque;
-- sincronização automática entre PRO 3.0 e o site;
-- estoque em tempo real;
-- integração oficial com WhatsApp Business Platform, Instagram Messaging e Facebook Messenger.
-
-## Próxima tarefa
-
-**ELEG-BOT-003 — CRM E RASTREAMENTO DE LEADS**
-
-Objetivo: registrar origem, produto de interesse, etapa do funil e conversão sem coletar dados desnecessários e sem depender apenas do armazenamento local do navegador.
+Nenhum preço divergente deve ser escolhido automaticamente.
