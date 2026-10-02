@@ -1,20 +1,44 @@
 # Elegance Cosméticos
 
-Site inicial da marca **Elegance Cosméticos**.
+Site comercial inicial da **Elegance Cosméticos**.
 
 ## Posicionamento
 
 **Sua Beleza. Seu Poder.**
 
-Marca de cosméticos com identidade futurista, vibrante e premium, focada em mulheres de 25 a 55 anos interessadas em beleza, skincare, maquiagem, perfumaria e cuidados pessoais.
+Identidade futurista, vibrante e premium.
 
-## Objetivos do projeto
+## Canais confirmados
 
-- Captar leads pelo Instagram, Facebook e WhatsApp
-- Apresentar categorias de produtos
-- Enviar catálogo digital
-- Direcionar clientes para atendimento no WhatsApp
-- Estruturar o funil de venda e pós-venda
+- Instagram: **@elegancecosmeticosbr**
+- WhatsApp comercial: **+55 31 99517-0249**
+- Site: **https://detritoscosmico.github.io/elegance-cosmeticos/**
+
+## ELEG-BOT-001 — status
+
+**IMPLEMENTADO NO SITE**
+
+O assistente atual:
+
+- identifica origem do lead;
+- recebe leads de links rastreáveis;
+- qualifica intenção;
+- qualifica categoria;
+- coleta o primeiro nome;
+- monta mensagem estruturada;
+- transfere para o WhatsApp;
+- organiza solicitações de pós-venda;
+- permite retomada local do atendimento.
+
+### Links de campanha
+
+Instagram:
+
+https://detritoscosmico.github.io/elegance-cosmeticos/?origem=instagram
+
+Facebook:
+
+https://detritoscosmico.github.io/elegance-cosmeticos/?origem=facebook
 
 ## Estrutura
 
@@ -25,23 +49,34 @@ Marca de cosméticos com identidade futurista, vibrante e premium, focada em mul
 │   └── style.css
 ├── js/
 │   └── script.js
+├── docs/
+│   └── ELEG-BOT-001_FLUXO_COMERCIAL.md
 └── README.md
 ```
 
-## Configuração atual
+## Regras comerciais
 
-- WhatsApp comercial: configurado
-- Instagram: @elegancecosmeticosbr
-- Site inicial: publicado
+O site não deve apresentar como disponível qualquer produto sem confirmação de:
 
-## Próximos ajustes obrigatórios
+1. identificação;
+2. estoque;
+3. preço;
+4. material visual suficiente.
 
-1. Inserir produtos reais com fotos, preços e descrição.
-2. Adicionar catálogo PDF.
-3. Criar página de promoções.
-4. Criar mensagens automáticas completas para WhatsApp Business.
-5. Integrar o fluxo de captação de Instagram e Facebook ao atendimento.
+Não inventar promoções, descontos, estoque ou benefícios.
 
-## Funil
+## O que ainda não está integrado
 
-Instagram/Facebook → WhatsApp → Catálogo → Pedido → Pagamento → Entrega → Pós-venda → Indicação.
+- WhatsApp Business Platform / Cloud API;
+- Instagram Messaging API;
+- Facebook Messenger API;
+- CRM externo;
+- catálogo oficial sincronizado;
+- pagamentos;
+- automações de recuperação fora do navegador.
+
+## Próxima tarefa
+
+**ELEG-BOT-002 — CATÁLOGO E BASE COMERCIAL**
+
+Cruzar os dados oficiais da Elegance e liberar para exibição somente produtos comercialmente confirmados.
