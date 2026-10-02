@@ -5,7 +5,7 @@ if (yearElement) {
   yearElement.textContent = currentYear;
 }
 
-const whatsappNumber = '5500000000000';
+const whatsappNumber = '5531995170249';
 const instagramUser = '@elegancecosmeticosbr';
 
 function buildWhatsAppLink(message) {
