@@ -28,17 +28,19 @@ Marca de cosméticos com identidade futurista, vibrante e premium, focada em mul
 └── README.md
 ```
 
+## Configuração atual
+
+- WhatsApp comercial: configurado
+- Instagram: @elegancecosmeticosbr
+- Site inicial: publicado
+
 ## Próximos ajustes obrigatórios
 
-1. Substituir o número `5500000000000` pelo WhatsApp comercial real.
-2. Inserir produtos reais com fotos, preços e descrição.
-3. Adicionar catálogo PDF.
-4. Criar página de promoções.
-5. Criar mensagens automáticas completas para WhatsApp Business.
-
-## Instagram
-
-@elegancecosmeticosbr
+1. Inserir produtos reais com fotos, preços e descrição.
+2. Adicionar catálogo PDF.
+3. Criar página de promoções.
+4. Criar mensagens automáticas completas para WhatsApp Business.
+5. Integrar o fluxo de captação de Instagram e Facebook ao atendimento.
 
 ## Funil
 
