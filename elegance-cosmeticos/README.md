@@ -30,21 +30,19 @@ Identidade futurista, vibrante e premium.
 
 ### ELEG-BOT-002 — Catálogo e base comercial
 
-**IMPLEMENTADO**
+**BLOQUEADO — AGUARDANDO CONFIRMAÇÃO DE PREÇOS**
 
-A vitrine pública usa somente produtos que passaram pelo cruzamento de:
+Cruzamento atual das fontes oficiais localizadas:
 
-- identificação;
-- preço cadastrado;
-- estoque positivo na fonte operacional mais recente;
-- material visual correspondente.
+- 7 produtos confirmados;
+- 7 com estoque confirmado;
+- 6 com imagem disponível;
+- 0 com preço confirmado;
+- 0 produtos prontos para venda.
 
-Produtos atualmente exibidos:
+Por essa razão, a vitrine pública não exibe produtos específicos nem preços.
 
-- **90219 — Cuide-se Bem Deleite Caramelizado Body Splash 200ml**
-- **75792 — Floratta Red Desodorante Colônia 75ml**
-
-A disponibilidade é reconfirmada no WhatsApp antes do fechamento.
+A tabela histórica de preços não é tratada como preço vigente porque o Catálogo Mestre registra divergências e exige nova confirmação antes da divulgação.
 
 ## Links de campanha
 
@@ -65,10 +63,6 @@ https://detritoscosmico.github.io/elegance-cosmeticos/
 ```txt
 /elegance-cosmeticos
 ├── index.html
-├── assets/
-│   └── produtos/
-│       ├── 90219-deleite-caramelizado-200ml.jpg
-│       └── 75792-floratta-red-75ml.jpg
 ├── css/
 │   └── style.css
 ├── data/
@@ -87,24 +81,21 @@ https://detritoscosmico.github.io/elegance-cosmeticos/
 Não exibir como oferta liberada qualquer produto sem evidência suficiente de:
 
 1. identificação;
-2. preço;
-3. estoque;
+2. estoque;
+3. preço;
 4. material visual.
 
 Não inventar promoções, descontos, estoque, vendas ou benefícios.
 
-## Limitações atuais
-
-- o estoque do site não é em tempo real;
-- o site não grava leads em CRM central;
-- não há WhatsApp Business Platform / Cloud API;
-- não há Instagram Messaging API;
-- não há Facebook Messenger API;
-- não há checkout ou pagamento integrado;
-- produtos do pedido 531077126 permanecem bloqueados enquanto o recebimento físico não estiver confirmado na base.
-
 ## Próxima tarefa
 
-**ELEG-BOT-003 — CRM E RASTREAMENTO DE LEADS**
+**ELEG-PRECO-002 — CONFIRMAÇÃO DE PREÇOS PARA LIBERAÇÃO SOCIAL**
 
-Registrar origem, produto de interesse, etapa e conversão de forma centralizada e auditável, preservando privacidade e sem armazenar credenciais no repositório.
+Cruzar as fontes atuais, identificar divergências e separar:
+
+- PREÇO CONFIRMADO;
+- DIVERGÊNCIA DE PREÇO;
+- PREÇO NÃO CONFIRMADO;
+- DADO NECESSÁRIO.
+
+Nenhum preço divergente deve ser escolhido sem aprovação.
